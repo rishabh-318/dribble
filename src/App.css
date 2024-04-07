@@ -1,0 +1,50 @@
+.app {
+  margin: 0;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+.Navbar span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile {
+  font-weight: bold;
+}
+
+/* Position rightNav to the right side */
+.rightNav {
+  margin-left: 75%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* .rightNav {
+    margin-top: 10px;
+  } */
+
+  .Navbar span {
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
