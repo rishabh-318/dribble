@@ -1,14 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .app {
   margin: 0;
+  padding: 10px 20px;
+  background-color: aqua;
 }
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  width: 100%;
+  background-color: orange;
+  color: black;
+  width: 97.3%;
+  height: 47px;
+  border-radius: 6px;
+  margin-bottom: 0;
+  position: fixed; /* Fix the navbar position */
+  top: 0; /* Align the navbar to the top of the viewport */
+  width: 100%; /* Make the navbar full width */
+  z-index: 1000; /* Ensure the navbar appears above other content */
 }
 
 .Navbar span {
@@ -20,6 +33,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
 .profile {
@@ -45,6 +59,78 @@
   .Navbar span {
     margin: 0;
     margin-right: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 2px; */
   }
+}
+
+.card {
+  /* margin: 10px 20px; */
+  background-color: white;
+  color: blueviolet;
+  min-width: 100%;
+  min-height: 780px;
+  max-width: 90%;
+  max-height: auto;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
+.cardText {
+  padding: 300px 20px;
+  padding-left: 20px;
+  font-size: 50px;
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#ball {
+  color: crimson;
+  font-family: "Times New Roman", Times, serif;
+}
+.coverDiv {
+  display: flex;
+  box-shadow: 14px 14px 1px rgba(0, 0, 0, 0.1);
+}
+.textDiv {
+  padding: 0;
+  margin: 0;
+  min-height: 780px;
+  height: auto;
+  width: 50%;
+}
+.textDiv,
+.imageDiv {
+  background-color: peru;
+}
+.imageDiv {
+  /* background-image: url(/src/assets/mamba.png);
+  background-size: cover;
+  background-position: center; */
+
+  padding: 0;
+  margin: 0;
+  min-height: 780px;
+  height: auto;
+  width: 50%;
+  position: relative;
+}
+.imageDiv img {
+  width: 100%;
+  height: auto;
+
+  /* to make movable */
+  position: absolute;
+  top: 100px;
+  cursor: grab;
+}
+.mamba {
+  z-index: 2;
+  left: 20px;
+}
+.mj {
+  z-index: 1;
+  left: -120px;
+}
+.posmj {
+  position: relative;
 }
