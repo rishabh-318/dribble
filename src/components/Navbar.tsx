@@ -1,14 +1,25 @@
 import React from "react";
+import Logo from "./logo.tsx";
+import Home from "./Home.tsx";
+import Profile from "./Profile.tsx";
+
+import "../App.css";
+import "../index.css";
 
 const Navbar: React.FC = () => {
   return (
     <div className="Navbar">
-      <span>logo</span>
+      <span>
+        <Logo />
+      </span>
       <div className="rightNav">
-        <span>Home</span>
+        <Home />
+
         <span>Event</span>
         <span>Donation</span>
-        <span className="profile">Profile</span>
+        <span className="profile">
+          <Profile />
+        </span>
       </div>
     </div>
   );
